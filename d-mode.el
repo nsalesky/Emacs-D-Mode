@@ -1004,7 +1004,7 @@ Handles `...` and r\"...\" WYSIWYG string literals."
 
 ;;----------------------------------------------------------------------------
 
-(defun d-forward-type (&optional brace-block-too)
+(defun d-forward-type (&optional brace-block-too stop-at-end)
   "Modified version of `c-forward-type' for d-mode." ;; checkdoc-params: brace-block-too
   (let ((start (point)) pos res name-res id-start id-end id-range)
 
